@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header text-center">
+        <div class="flex justify-center">
+            <img src="/images/netflix_logo.jpg" alt="netflix_logo" class="logo">
+        </div>
+        <h2 class="text-neutral-100 text-3xl font-bold">Search Unlimited movies, TV shows and more</h2>
+        <p class="text-neutral-400 text-white text-lg">Ready to watch?Enter your movie name to check if its a good choice!</p>
+        <div class="flex mt-3">
+            <input class="px-4 py-3 text-white" type="text" placeholder="Search your favorite movie" id="movieName">
+            <button class="btn" onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <div id="container" class="w-[700px] mx-auto mt-16">
+        <div class="flex gap-10 text-neutral-50">
+            <div>
+                <h1 class="text-2xl font-bold" id="title">The Avengers</h1>
+                <p class="text-xl text-neutral-300" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dicta ea hic earum quas officiis!</p>
+                <p class="my-1">Genre: <span class="text-neutral-200" id="genre">Kumar Varun</span></p>
+                <p class="my-1">Actors: <span class="text-neutral-200" id="actors">Kumar Varun</span></p>
+                <p class="my-1">Directors: <span class="text-neutral-200" id="directors">Kumar Varun</span></p>
+                <p class="my-1">Awards: <span class="text-neutral-200" id="awards">Kumar Varun</span></p>
+                <p class="my-1">Box office collection: <span class="text-neutral-200" id="boxoffice">Kumar Varun</span></p>
+                <p class="my-1">Languages: <span class="text-neutral-200" id="languages">Kumar Varun</span></p>
+                <p class="my-1">IMDB ratings: <span class="text-neutral-200" id="imdb">Kumar Varun</span></p>
+            </div>
+
+            <div class="banner">
+            <img id="poster" class="rounded-xl" src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg" alt="">
+            <div class="suggestion">Worth watching</div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-center my-36 text-neutral-100" id="error"></h1>   
+     <script src="script.js"></script>
+</body>
+</html>
